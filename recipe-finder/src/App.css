@@ -1,0 +1,276 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  background: linear-gradient(#d6dbe5);
+}
+
+h1, h3 {
+  color: #333;
+}
+
+/* HomePage Styling */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  /* background-image: url('https://media.gettyimages.com/photos/herbs-and-spices-over-black-stone-background-picture-id589135154?b=1&k=6&m=589135154&s=612x612&w=0&h=2iEguABF5gMQ-13QZaBfxoUF80ZQKtrMcXm9i66cndg='); Replace with your desired background image URL */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+ 
+/* Container for the search section */
+.search-container {
+  z-index: 2; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* color: white; */
+  padding: 20px;
+}
+
+.search-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.search-container p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Big Search Button */
+.search-container button {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 300px;
+}
+
+.search-container button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.search-container input {
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.search-container input:focus {
+  border-color: #28a745;
+}
+
+/* Recipe List Styling */
+.recipe-list {
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.recipe-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.recipe-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.recipe-card a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #28a745;
+  transition: color 0.3s;
+}
+
+.recipe-card a:hover {
+  color: #218838;
+}
+
+/* Recipe Detail Page */
+.recipe-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.recipe-detail img {
+  width: 100%;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.recipe-detail h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+.recipe-detail h3 {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.recipe-detail ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.recipe-detail li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.recipe-detail a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.recipe-detail a:hover {
+  color: #218838;
+}
+
+/* Loading and No Results Styling */
+.loading-message, .no-results-message {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+/* Header Styling */
+.recipe-detail-header {
+  margin-bottom: 30px;
+}
+
+.recipe-title {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recipe-category {
+  font-size: 1.3rem;
+  color: #777;
+  font-style: italic;
+}
+
+/* Recipe Image */
+.recipe-image {
+ 
+  border-radius: 20px;
+  max-height: 32rem;
+  margin-bottom: 30px;
+}
+
+ 
+
+/* Ingredients Section */
+.ingredients-title {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+ 
+
+/* Back Button */
+.back-button-container {
+  margin-top: 20px;
+}
+
+.back-button {
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #218838;
+}
+
+ 
+.favorite-btn {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.favorite-btn:hover {
+  background-color: #cc0000;
+}
+
+
+
+
+
