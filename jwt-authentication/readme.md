@@ -45,7 +45,7 @@ node app.js
 
 **POST /api/todos**<br>
 **Registered as Akash and posting ToDo Task**
-![Screenshot (110)](https://github.com/user-attachments/assets/bc201c89-c044-4344-8425-a700bf1e95b6) <br><br><br><br>
+ ![Screenshot (111)](https://github.com/user-attachments/assets/0d285bad-ce84-40d3-841c-2a245858a5cd) <br><br><br><br>
 
 **GET /api/todos: Should return only the to-do items belonging to the currently logged-in user.**
 ![Screenshot (112)](https://github.com/user-attachments/assets/18e3ae9e-f45d-4704-8f84-bf36f5cb3ffc) <br><br><br><br>
